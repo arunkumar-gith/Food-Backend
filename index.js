@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 var cors = require("cors");
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const db = require("./db");
 db();
 app.use(cors());

@@ -4,7 +4,7 @@ const uri =
 
 const db = async () => {
   try {
-    await mongoose.connect(`${process.env.DATABASE}`, {
+    await mongoose.connect(uri, {
       useNewUrlParser: true,
     });
     console.log("Connected");
